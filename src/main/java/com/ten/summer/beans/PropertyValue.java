@@ -2,7 +2,9 @@ package com.ten.summer.beans;
 
 /**
  * 用于bean的属性注入
- * @author yihua.huang@dianping.com
+ *
+ * @author wshten
+ * @date 2018/11/10
  */
 public class PropertyValue {
 

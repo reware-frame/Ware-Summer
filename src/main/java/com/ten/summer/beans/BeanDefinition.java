@@ -2,56 +2,57 @@ package com.ten.summer.beans;
 
 /**
  * bean的内容及元数据，保存在BeanFactory中，包装bean的实体
- * 
- * @author yihua.huang@dianping.com
+ *
+ * @author wshten
+ * @date 2018/11/10
  */
 public class BeanDefinition {
 
-	private Object bean;
+    private Object bean;
 
-	private Class beanClass;
+    private Class beanClass;
 
-	private String beanClassName;
+    private String beanClassName;
 
-	private PropertyValues propertyValues = new PropertyValues();
+    private PropertyValues propertyValues = new PropertyValues();
 
-	public BeanDefinition() {
-	}
+    public BeanDefinition() {
+    }
 
-	public void setBean(Object bean) {
-		this.bean = bean;
-	}
+    public void setBean(Object bean) {
+        this.bean = bean;
+    }
 
-	public Class getBeanClass() {
-		return beanClass;
-	}
+    public Class getBeanClass() {
+        return beanClass;
+    }
 
-	public void setBeanClass(Class beanClass) {
-		this.beanClass = beanClass;
-	}
+    public void setBeanClass(Class beanClass) {
+        this.beanClass = beanClass;
+    }
 
-	public String getBeanClassName() {
-		return beanClassName;
-	}
+    public String getBeanClassName() {
+        return beanClassName;
+    }
 
-	public void setBeanClassName(String beanClassName) {
-		this.beanClassName = beanClassName;
-		try {
-			this.beanClass = Class.forName(beanClassName);
-		} catch (ClassNotFoundException e) {
-			e.printStackTrace();
-		}
-	}
+    public void setBeanClassName(String beanClassName) {
+        this.beanClassName = beanClassName;
+        try {
+            this.beanClass = Class.forName(beanClassName);
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
 
-	public Object getBean() {
-		return bean;
-	}
+    public Object getBean() {
+        return bean;
+    }
 
-	public PropertyValues getPropertyValues() {
-		return propertyValues;
-	}
+    public PropertyValues getPropertyValues() {
+        return propertyValues;
+    }
 
-	public void setPropertyValues(PropertyValues propertyValues) {
-		this.propertyValues = propertyValues;
-	}
+    public void setPropertyValues(PropertyValues propertyValues) {
+        this.propertyValues = propertyValues;
+    }
 }

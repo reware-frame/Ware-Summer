@@ -6,7 +6,10 @@ import java.net.URL;
 import java.net.URLConnection;
 
 /**
- * @author yihua.huang@dianping.com
+ * Open java.net.URLConnection By java.net.URL, To get java.io.InputStream
+ *
+ * @author wshten
+ * @date 2018/11/10
  */
 public class UrlResource implements Resource {
 
@@ -17,7 +20,7 @@ public class UrlResource implements Resource {
     }
 
     @Override
-    public InputStream getInputStream() throws IOException{
+    public InputStream getInputStream() throws IOException {
         URLConnection urlConnection = url.openConnection();
         urlConnection.connect();
         return urlConnection.getInputStream();

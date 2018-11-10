@@ -1,8 +1,12 @@
 package com.ten.summer.beans;
 
 /**
- * 从配置中读取BeanDefinition
- * @author yihua.huang@dianping.com
+ * ApplicationContext Configuration File Reader 
+ *
+ * 配置文件读取类顶层接口
+ *
+ * @author wshten
+ * @date 2018/11/10
  */
 public interface BeanDefinitionReader {
 
