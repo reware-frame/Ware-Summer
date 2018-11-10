@@ -1,3 +1,3 @@
 # SummerMVC
 
-> Artifical SpringMVC
+> Artifical Spring Framework
