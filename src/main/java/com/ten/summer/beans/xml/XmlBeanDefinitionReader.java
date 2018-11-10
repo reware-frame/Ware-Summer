@@ -15,7 +15,12 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.InputStream;
 
 /**
- * @author yihua.huang@dianping.com
+ * XML ApplicationContext Configuration File Reader
+ * <p>
+ * 从XML配置中读取BeanDefinition
+ *
+ * @author wshten
+ * @date 2018/11/10
  */
 public class XmlBeanDefinitionReader extends AbstractBeanDefinitionReader {
 
