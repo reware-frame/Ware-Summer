@@ -37,4 +37,32 @@ public void refresh() throws Exception {
 }
 ```
 
-### beans
+## beans
+
+#### 方法风格
+
+直链路式的调用链，方法单一职责，向下委托
+
+```java
+public void fun1(){
+    fun2();
+}
+
+protected void fun2(){
+    func3();
+}
+
+private void fun3(){
+    func4();
+}
+
+private void fun4(){
+    throw ...;
+}
+```
+
+#### 类结构风格
+
+以单一职责，单一资源进行module的建模。
+
+使用接口->抽象的module族，通过组合使用。
